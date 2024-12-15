@@ -1,16 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #FFFDD0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fffdd0;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
