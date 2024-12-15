@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="container flex flex-col w-4 border-sky-300">
+        <div className="product_card">
+          <div className="product_img">
+            <img
+              className="product_img"
+              src="src/assets/image-produt-mobile.jpg"
+              alt="perfume-pic"
+            />
+          </div>
+          <div className="product_info">
+            <h3>P E R F U M E</h3>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+            <p>
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div className="prices flex flex-col ">
+              <p>$149.99</p>
+              <s>$169.99</s>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <footer className="footer">
+        <p>This was built by shayne</p>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
