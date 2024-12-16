@@ -8,6 +8,10 @@ export default {
     extend: {
       colors: {
         'cream': '#FFFDD0',
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'fraunces': ['Fraunces', 'serif'],
       }
     },
   },

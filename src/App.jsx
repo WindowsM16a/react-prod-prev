@@ -1,34 +1,49 @@
 function App() {
   return (
     <>
-      <div className="container border-sky-300">
-        <div className="product_card w-37 flex-row  bg-white rounded-3xl">
-          <div className="product_img w-50% h-100%">
+      <div className="container flex flex-col items-center justify-center border-sky-300 font-montserrat text-g ">
+        <div className="product_card w-[37rem] h-[28rem] flex flex-row  bg-white rounded-lg">
+          <div className="product_img w-[50%] h-full">
             <img
-              className="product_img w-100% h-100%"
+              className="product_img rounded-l-lg w-full h-full object-cover object-center"
               src="src/assets/image-product-mobile.jpg"
               alt="perfume-pic"
             />
           </div>
-          <div className="product_info">
+          <div className="product_info flex flex-col items-start justify-center p-6 gap-6 w-[50%] ">
             <h3>P E R F U M E</h3>
-            <h1>Gabrielle Essence Eau De Parfum</h1>
-            <p>
+            <h1 className="text-4xl leading-8 font-bold font-fraunces">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p className="text-slate-500 font-medium">
               A floral, solar and voluptuous interpretation composed by Olivier
               Polge, Perfumer-Creator for the House of CHANEL.
             </p>
-            <div className="prices flex flex-row items-center justify-center gap-3">
-              <p className="text-3xl">$149.99</p>
-              <s className="line-through">$169.99</s>
+            <div className="prices flex flex-row items-center justify-center gap-3 font-fraunces">
+              <p className="text-3xl font-bold">$149.99</p>
+              <s className="text-sm text-slate-500">$169.99</s>
             </div>
-            <button className="btn w-8">
-              <img src="src/assets/icon-cart.svg" alt="cart svg" /> Add to Cart
+            <button className="btn w-full h-11 flex flex-row items-center justify-center gap-2 bg-sky-900 bor rounded-xl text-white">
+              <img
+                className="w-4"
+                src="src/assets/icon-cart.svg"
+                alt="cart svg"
+              />{" "}
+              Add to Cart
             </button>
           </div>
         </div>
       </div>
-      <footer className="footer">
-        <p>This was built by shayne</p>
+      <footer className="footer absolute w-full text-center left-0 right-0 bottom-2 p-4">
+        <p className="text-slate-500">
+          This was built by{" "}
+          <a
+            className="text-sky-900 underline-offset-2 underline"
+            href="https://github.com/WindowsM16a"
+          >
+            Shayne Wuver
+          </a>
+        </p>
       </footer>
     </>
   );
