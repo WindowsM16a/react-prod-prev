@@ -35,7 +35,7 @@ function App() {
           </div>
         </div>
       </div>
-      <footer className="footer absolute w-full text-center left-0 right-0 bottom-2 p-4">
+      <footer className="footer fixed lg:absolute w-full text-center left-0 right-0 bottom-2 p-4">
         <p className="text-slate-500">
           This was built by{" "}
           <a
