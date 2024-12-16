@@ -2,7 +2,7 @@ function App() {
   return (
     <>
       <div className="container flex flex-col items-center justify-center border-sky-300 text-g ">
-        <div className="product_card w-[36rem] h-[28rem] flex flex-row  bg-white rounded-lg">
+        <div className="product_card w-[36rem] h-[28rem] flex flex-col lg:flex-row  bg-white rounded-lg">
           <div className="product_img w-[50%] h-full">
             <img
               className="product_img rounded-l-lg w-full h-full object-cover object-center"
@@ -27,11 +27,10 @@ function App() {
             </div>
             <button className="btn w-full h-11 flex flex-row items-center justify-center gap-2 bg-dark-greenish bor rounded-xl text-white hover:bg-darker-greenish">
               <img
-                className="w-4"
                 src="https://res.cloudinary.com/dx72ndl5e/image/upload/v1734333624/icon-cart_irasif.svg"
-                alt="cart svg"
+                alt="shopping-cart-icon"
               />{" "}
-              Add to Cart
+              Add to cart
             </button>
           </div>
         </div>
